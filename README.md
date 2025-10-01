@@ -3,18 +3,16 @@
 A versatile **File Integrity Monitoring (FIM)** tool available with both a **modern web interface** and a **powerful command-line interface (CLI)**.
 This application allows users to generate cryptographic hash baselines for their important files and later verify if these files have been modified.
 
-✅ Perfect for **security enthusiasts**, **system admins**, or **students** building a cybersecurity portfolio project.
-
 ---
 
 ## ✨ Key Features
 
-* 🎨 **Dual Interface** → A user-friendly **web UI** for manual checks & a robust **CLI** for automation.
-* 👥 **Multi-User Support** → Web app includes secure **login & registration**. Each user has their own private baseline history.
-* 📊 **Personalized Dashboard** → Users can view the history of all uploaded files.
-* 🔒 **Multiple Hash Algorithms** → MD5, SHA1, and SHA256 for thorough integrity verification.
-* 📂 **Drag & Drop Upload** → Clean, modern dark-mode UI for uploading files.
-* ⚡ **Bulk Operations (CLI)** → Generate a baseline for an entire folder at once.
+*  **Dual Interface** → A user-friendly **web UI** for manual checks & a robust **CLI** for automation.
+*  **Multi-User Support** → Web app includes secure **login & registration**. Each user has their own private baseline history.
+*  **Personalized Dashboard** → Users can view the history of all uploaded files.
+*  **Multiple Hash Algorithms** → MD5, SHA1, and SHA256 for thorough integrity verification.
+*  **Drag & Drop Upload** → Clean, modern dark-mode UI for uploading files.
+*  **Bulk Operations (CLI)** → Generate a baseline for an entire folder at once.
 
 ---
 
