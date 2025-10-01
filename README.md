@@ -136,15 +136,3 @@ Use custom baseline:
 ```bash
 python cli_checker.py --generate /path/to/file.txt --baseline cli_baseline.json
 ```
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-See [LICENSE](LICENSE) for details.
-
----
-
-
-Mau aku bikinin juga **badge + demo screenshot placeholder** biar README kamu terlihat kayak project open-source besar di GitHub?
