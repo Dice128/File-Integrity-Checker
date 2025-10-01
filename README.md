@@ -1,130 +1,150 @@
-File Integrity Checker (Web & CLI)
-A versatile File Integrity Checker (FIM) tool available with both a modern web interface and a powerful command-line interface (CLI). This application allows users to generate cryptographic hash baselines for their important files and later verify if these files have been modified.
+# 📂 File Integrity Checker (Web & CLI)
 
-The web application is built with Flask and supports multiple users with individual, separate dashboards, while the CLI is perfect for scripting and bulk operations.
+A versatile **File Integrity Monitoring (FIM)** tool available with both a **modern web interface** and a **powerful command-line interface (CLI)**.
+This application allows users to generate cryptographic hash baselines for their important files and later verify if these files have been modified.
 
-Key Features ✨
-Dual Interface: A user-friendly web UI for manual checks and a robust CLI for automation.
+✅ Perfect for **security enthusiasts**, **system admins**, or **students** building a cybersecurity portfolio project.
 
-Multi-User Support: The web app includes a secure login and registration system. Each user has their own private baseline history.
+---
 
-Personalized Dashboard: Logged-in users can view a history of all the files they have generated a baseline for.
+## ✨ Key Features
 
-Multiple Hash Algorithms: Utilizes MD5, SHA1, and SHA256 for thorough integrity verification.
+* 🎨 **Dual Interface** → A user-friendly **web UI** for manual checks & a robust **CLI** for automation.
+* 👥 **Multi-User Support** → Web app includes secure **login & registration**. Each user has their own private baseline history.
+* 📊 **Personalized Dashboard** → Users can view the history of all uploaded files.
+* 🔒 **Multiple Hash Algorithms** → MD5, SHA1, and SHA256 for thorough integrity verification.
+* 📂 **Drag & Drop Upload** → Clean, modern dark-mode UI for uploading files.
+* ⚡ **Bulk Operations (CLI)** → Generate a baseline for an entire folder at once.
 
-Easy to Use: Features a drag-and-drop file upload system in the web interface.
+---
 
-Bulk Operations (CLI): The CLI can generate a baseline for an entire folder at once.
+## 🖼️ Screenshot
 
-Screenshot
-Here you can add a screenshot of your application's web interface.
+> *(Add your screenshot here – e.g., `screenshot.png`)*
 
-``
+```
+Example: Dashboard with file upload & history
+```
 
-Technology Stack 💻
-Backend: Python, Flask
+---
 
-Frontend: HTML, Tailwind CSS (via CDN), vanilla JavaScript
+## 💻 Technology Stack
 
-Data Storage: Simple JSON files (users.json, baseline.json) are used for storing user and baseline data, making the application portable and easy to set up without a formal database.
+* **Backend:** Python, Flask
+* **Frontend:** HTML, TailwindCSS (via CDN), Vanilla JavaScript
+* **Data Storage:** JSON (users.json, baseline.json) → portable & easy setup
 
-File Structure 📂
+---
+
+## 📂 File Structure
+
+```bash
 .
-├── web_checker.py         # Main Flask web application
-├── cli_checker.py         # Command-line interface tool
-├── requirements.txt       # Python dependencies
-├── uploads/               # Directory for temporarily storing uploaded files
-├── users.json             # (Auto-generated) Stores user credentials
-└── baseline.json          # (Auto-generated) Stores file hash baselines
-Setup and Installation 🚀
-Follow these steps to get the application running on your local machine.
+├── web_checker.py       # Main Flask web application
+├── cli_checker.py       # Command-line interface tool
+├── requirements.txt     # Python dependencies
+├── uploads/             # Temporary storage for uploaded files
+├── users.json           # (Auto-generated) Stores user credentials
+└── baseline.json        # (Auto-generated) Stores file hash baselines
+```
 
-Prerequisites
-Python 3.7+
+---
 
-pip (Python package installer)
+## 🚀 Setup & Installation
 
-Installation Steps
-Clone the repository:
+### 🔧 Prerequisites
 
-Bash
+* Python **3.7+**
+* `pip` (Python package installer)
 
+### 📥 Installation Steps
+
+```bash
+# Clone the repository
 git clone <your-repository-url>
 cd <repository-folder>
-Create a virtual environment (recommended):
 
-Bash
-
+# Create & activate a virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-Install the required dependencies:
+source venv/bin/activate   # Windows: venv\Scripts\activate
 
-Bash
-
+# Install dependencies
 pip install -r requirements.txt
-How to Use 🧑‍💻
-1. Web Application
-The web application provides a graphical interface for managing your file baselines.
+```
 
-Run the Flask server:
+---
 
-Bash
+## 🧑‍💻 How to Use
 
+### 🌐 Web Application
+
+Run Flask server:
+
+```bash
 flask run
-Or directly:
-
-Bash
-
+# or
 python web_checker.py
-Access the application by opening your web browser and navigating to http://127.0.0.1:5000.
+```
 
-Register a new account and then log in.
+Open browser → [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-To generate a baseline:
+1. Register a new account & log in
+2. **Generate Baseline:**
 
-Drag and drop a file or click to select one.
+   * Upload file → Click *Generate Baseline* → Hashes saved
+3. **Verify File:**
 
-Click the "Generate Baseline" button. The file's hashes are now saved to your account.
+   * Upload file → Click *Verify File* → Status shown (*ORIGINAL / MODIFIED / NOT IN BASELINE*)
+4. View history on your **Dashboard**
 
-To verify a file:
+---
 
-Upload the same file again (it can be the original or a modified version).
+### 🖥️ Command-Line Interface (CLI)
 
-Click the "Verify File" button. The application will compare its current hashes with the saved baseline and show you the status (ORIGINAL, MODIFIED, or NOT IN BASELINE).
+The CLI is great for **scripting, servers, or bulk checks**.
 
-Check your Dashboard by clicking the "Dashboard" link in the navigation bar to see a history of all files you are monitoring.
+⚠️ Note: CLI and Web use different `baseline.json` formats. Keep them separate or specify a custom file with `--baseline`.
 
-2. Command-Line Interface (CLI)
-The CLI is ideal for scripting, automation, or checking files on a server.
+#### Examples:
 
-Note on CLI baseline.json: The cli_checker.py script generates a baseline.json file with a different format (a simple list) than the one used by the web application (a dictionary of users). They are not compatible. It's recommended to use them in separate folders or specify a different baseline file for the CLI using the --baseline flag.
+Generate baseline for one file:
 
-Usage examples:
+```bash
+python cli_checker.py --generate /path/to/document.pdf
+```
 
-Generate a baseline for a single file:
+Generate baseline for all files in a folder:
 
-Bash
+```bash
+python cli_checker.py --generate-folder /path/to/important_docs
+```
 
-python cli_checker.py --generate /path/to/your/document.pdf
-Generate a baseline for all files in a folder:
+Verify a single file:
 
-Bash
+```bash
+python cli_checker.py --verify /path/to/document.pdf
+```
 
-python cli_checker.py --generate-folder /path/to/your/important_documents
-Verify a single file against the baseline:
+Verify all files:
 
-Bash
-
-python cli_checker.py --verify /path/to/your/document.pdf
-Verify all files listed in the baseline:
-
-Bash
-
+```bash
 python cli_checker.py --verify-all
-Use a custom baseline file:
+```
 
-Bash
+Use custom baseline:
 
+```bash
 python cli_checker.py --generate /path/to/file.txt --baseline cli_baseline.json
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+See [LICENSE](LICENSE) for details.
+
+---
+
+
+Mau aku bikinin juga **badge + demo screenshot placeholder** biar README kamu terlihat kayak project open-source besar di GitHub?
