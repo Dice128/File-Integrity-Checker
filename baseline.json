@@ -1,0 +1,20 @@
+{
+  "hey": [
+    {
+      "path": "D:\\Projects\\Cybersecurity\\File integrity checker\\File-Integrity-Checker\\uploads\\Praktikum_02_Klasifikasi_Gambar.pdf",
+      "md5": "3dec81563d2c9d36cdd38baed4156044",
+      "sha1": "72db9865fa6570d5ce32cfb98e0329659c6ef866",
+      "sha256": "bff351566fda6415d9ae46f585a7948aaae6ef5387c44f87dea84bf18108bcdb",
+      "timestamp": "2025-10-01T16:21:39.323792"
+    }
+  ],
+  "admin1": [
+    {
+      "path": "D:\\Projects\\Cybersecurity\\File integrity checker\\File-Integrity-Checker\\uploads\\Laporan_Praktikum_02_Klasifikasi_Gambar_Ray_Egans_Pramudya_4.33.24.1.22.docx",
+      "md5": "47099f50dd854cf7e7826724aa14aa17",
+      "sha1": "6471662bee0eea29435bb6e24f64321e7cd54377",
+      "sha256": "7925bfed73c9865afe3ca2f29d641ee8eb61445f7ae287dc59380fd3ba33fc66",
+      "timestamp": "2025-10-01T16:21:56.420826"
+    }
+  ]
+}
