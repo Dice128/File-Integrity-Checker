@@ -5,7 +5,7 @@ This application allows users to generate cryptographic hash baselines for their
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 *  **Dual Interface** → A user-friendly **web UI** for manual checks & a robust **CLI** for automation.
 *  **Multi-User Support** → Web app includes secure **login & registration**. Each user has their own private baseline history.
@@ -16,9 +16,12 @@ This application allows users to generate cryptographic hash baselines for their
 
 ---
 
-## 🖼️ Screenshot
+## Screenshot
 
-> *(Add your screenshot here – e.g., `screenshot.png`)*
+> <img width="1919" height="974" alt="image" src="https://github.com/user-attachments/assets/8c3d57f8-d805-4f27-be45-1c2c3eb79b42" />
+> <img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/9df104f0-619f-49a8-88a2-ec81a88da563" />
+> <img width="1919" height="971" alt="image" src="https://github.com/user-attachments/assets/1877e030-c4b5-4348-bcf5-aeca107e583a" />
+
 
 ```
 Example: Dashboard with file upload & history
@@ -26,7 +29,7 @@ Example: Dashboard with file upload & history
 
 ---
 
-## 💻 Technology Stack
+## Technology Stack
 
 * **Backend:** Python, Flask
 * **Frontend:** HTML, TailwindCSS (via CDN), Vanilla JavaScript
@@ -50,12 +53,12 @@ Example: Dashboard with file upload & history
 
 ## 🚀 Setup & Installation
 
-### 🔧 Prerequisites
+### Prerequisites
 
 * Python **3.7+**
 * `pip` (Python package installer)
 
-### 📥 Installation Steps
+### Installation Steps
 
 ```bash
 # Clone the repository
@@ -74,7 +77,7 @@ pip install -r requirements.txt
 
 ## 🧑‍💻 How to Use
 
-### 🌐 Web Application
+### Web Application
 
 Run Flask server:
 
@@ -97,7 +100,7 @@ Open browser → [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
-### 🖥️ Command-Line Interface (CLI)
+### Command-Line Interface (CLI)
 
 The CLI is great for **scripting, servers, or bulk checks**.
 
