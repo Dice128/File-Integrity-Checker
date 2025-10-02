@@ -19,13 +19,11 @@ This application allows users to generate cryptographic hash baselines for their
 ## Screenshot
 
 > <img width="1919" height="974" alt="image" src="https://github.com/user-attachments/assets/8c3d57f8-d805-4f27-be45-1c2c3eb79b42" />
+
 > <img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/9df104f0-619f-49a8-88a2-ec81a88da563" />
+
 > <img width="1919" height="971" alt="image" src="https://github.com/user-attachments/assets/1877e030-c4b5-4348-bcf5-aeca107e583a" />
 
-
-```
-Example: Dashboard with file upload & history
-```
 
 ---
 
