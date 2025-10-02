@@ -195,7 +195,7 @@ DASHBOARD_TEMPLATE = """
   </main>
   <footer class="bg-gray-800 border-t border-gray-700 mt-8">
     <div class="max-w-7xl mx-auto px-6 py-4 text-center text-gray-500 text-sm">
-      © {{year}} File Integrity Checker — Built with Flask & Tailwind
+      © {{year}} File Integrity Checker — Ray Egans
     </div>
   </footer>
 </body>
